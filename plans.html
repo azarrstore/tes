@@ -1,0 +1,377 @@
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Digital MarketPlace &amp; Hosting
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #3B2F1B;
+      color: #E9E2D0;
+    }
+    /* Custom scrollbar for better elegance */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #4B3B1B;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #A67C00;
+      border-radius: 10px;
+      border: 2px solid #4B3B1B;
+    }
+    /* Fade-in and slide-up animation */
+    @keyframes fadeSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-slide-in {
+      animation: fadeSlideIn 0.6s ease forwards;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="w-full flex items-center justify-between px-8 py-6 border-b border-[#6B5A2B] bg-gradient-to-r from-[#4B3B1B] to-[#3B2F1B] shadow-lg fixed top-0 z-50 animate-fade-slide-in" style="animation-delay: 0.1s;">
+   <div class="text-3xl font-extrabold tracking-wide text-[#D9C9A3] drop-shadow-lg flex items-center select-none">
+    <i class="fas fa-server mr-3 text-[#C9A66B] drop-shadow-md">
+    </i>
+    Hosting Plans
+   </div>
+   <ul class="hidden md:flex space-x-12 text-[#D9C9A3] font-semibold tracking-wide uppercase text-sm">
+    <li>
+     <a class="hover:text-[#C9A66B] transition duration-300 ease-in-out" href="index.html">
+      Home
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#C9A66B] transition duration-300 ease-in-out" href="plans.html">
+      Hosting Plans
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#C9A66B] transition duration-300 ease-in-out" href="features.html">
+      Features
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#C9A66B] transition duration-300 ease-in-out" href="about.html">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#C9A66B] transition duration-300 ease-in-out" href="contact.html">
+      Contact
+     </a>
+    </li>
+   </ul>
+   <button aria-label="Toggle menu" class="md:hidden text-[#D9C9A3] focus:outline-none" id="menu-btn">
+    <i class="fas fa-bars fa-lg">
+    </i>
+   </button>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="hidden flex-col bg-gradient-to-b from-[#4B3B1B] to-[#3B2F1B] px-8 py-6 space-y-6 md:hidden fixed top-20 w-full z-40 shadow-lg animate-fade-slide-in" id="mobile-menu" style="animation-delay: 0.15s;">
+   <a class="block text-[#D9C9A3] font-semibold uppercase tracking-wide hover:text-[#C9A66B] transition duration-300 ease-in-out" href="index1.html">
+    Home
+   </a>
+   <a class="block text-[#D9C9A3] font-semibold uppercase tracking-wide hover:text-[#C9A66B] transition duration-300 ease-in-out" href="plans.html">
+    Hosting Plans
+   </a>
+   <a class="block text-[#D9C9A3] font-semibold uppercase tracking-wide hover:text-[#C9A66B] transition duration-300 ease-in-out" href="features.html">
+    Features
+   </a>
+   <a class="block text-[#D9C9A3] font-semibold uppercase tracking-wide hover:text-[#C9A66B] transition duration-300 ease-in-out" href="about1.html">
+    About Us
+   </a>
+   <a class="block text-[#D9C9A3] font-semibold uppercase tracking-wide hover:text-[#C9A66B] transition duration-300 ease-in-out" href="contact1.html">
+    Contact
+   </a>
+  </div>
+  <!-- Hosting Plans Section -->
+  <section class="py-24 px-6 bg-[#1C1C1C]">
+   <div class="max-w-7xl mx-auto text-center">
+    <div class="p-6">
+     <h2 class="text-4xl font-bold mb-16 text-[#D9C9A3] animate-fade-slide-in" style="animation-delay: 0.2s;">
+      Produk Kami
+     </h2>
+     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Card 1 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.25s;">
+       <img alt="Produk 1, a digital marketplace hosting product with modern server rack and glowing lights" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/72653bec-82a5-413a-29e0-93458b2d91e1.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 1
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 1 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.3s;">
+       <img alt="Produk 2, a sleek hosting server with digital interface and network connections" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/ddf56b91-b795-46de-9416-f050aa6e1876.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 2
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 2 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.35s;">
+       <img alt="Produk 3, futuristic data center with glowing server racks and digital data streams" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/3ad5d807-a183-4b4d-e8ac-0345970aef2f.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 3
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 3 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.4s;">
+       <img alt="Produk 4, close-up of server hardware with blinking lights and cables" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/3f661d80-f5bd-4828-d9e9-e2988f90f7e0.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 4
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 4 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.45s;">
+       <img alt="Produk 5, modern cloud computing concept with servers and digital cloud icons" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/34c13b1d-c0b4-45eb-da5a-150039961050.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 5
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 5 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.5s;">
+       <img alt="Produk 6, data center interior with rows of servers and blue LED lights" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/4117ecf6-635b-4be0-306b-382ffe2f662d.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 6
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 6 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.55s;">
+       <img alt="Produk 7, futuristic server room with holographic data displays" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/2b53f544-5ab0-421a-5dee-7f8915124018.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 7
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 7 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.6s;">
+       <img alt="Produk 8, close-up of server motherboard with glowing circuits" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/e1854a42-d0b9-437f-ea7e-2b31e21aa817.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 8
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 8 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.65s;">
+       <img alt="Produk 9, network cables plugged into server ports with LED indicators" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/23dd804f-d71e-4103-e851-752c54084ab9.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 9
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 9 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.7s;">
+       <img alt="Produk 10, futuristic cloud server with digital data flow and blue neon lights" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/5c65f254-805a-441d-6a67-d5f6d2b6914e.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 10
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 10 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 11 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.75s;">
+       <img alt="Produk 11, server racks with colorful LED lights in a dark room" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/936eab2f-3250-455a-88fb-5badb1d6504f.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 11
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 11 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 12 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.8s;">
+       <img alt="Produk 12, futuristic data center with holographic interface and servers" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/b8b15df2-0c42-48f6-da28-3bb4204b16e2.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 12
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 12 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 13 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.85s;">
+       <img alt="Produk 13, close-up of server cooling system with blue LED lights" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/a24de4b4-faed-4788-1cf4-b429ca2b4c98.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 13
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 13 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 14 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.9s;">
+       <img alt="Produk 14, futuristic server room with neon lights and digital data streams" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/6b783c20-4abd-4307-3bea-ecda6b8c6aa7.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 14
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 14 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+      <!-- Card 15 -->
+      <div class="bg-[#3B2F1B] rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition transform animate-fade-slide-in" style="animation-delay: 0.95s;">
+       <img alt="Produk 15, high-tech server hardware with glowing blue and orange lights" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/9cc6a5a7-bbf4-4366-6750-da9e3acf7dac.jpg" width="400"/>
+       <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-[#F3E9DC]">
+         Produk 15
+        </h3>
+        <p class="text-[#D9C9A3] mb-4">
+         Deskripsi menarik produk 15 yang menjual.
+        </p>
+        <a class="inline-block bg-gradient-to-r from-[#C9A66B] to-[#A67C00] text-[#3B2F1B] px-5 py-2 rounded-full font-semibold uppercase text-sm hover:opacity-90 transition" href="#">
+         Lihat Detail
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-[#4B3B1B] to-[#3B2F1B] text-[#C9A66B] py-10 mt-auto shadow-inner border-t border-[#6B5A2B] animate-fade-slide-in" style="animation-delay: 1s;">
+   <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+    <div class="text-sm select-none tracking-wide font-semibold drop-shadow-md">
+     © 2025 Bandit Store. Hak Cipta.
+    </div>
+    <div class="flex space-x-8 text-2xl">
+     <a aria-label="Facebook" class="hover:text-[#A67C00] transition duration-300 ease-in-out" href="https://www.facebook.com/mfajrin.fajrin.359">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Youtube" class="hover:text-[#A67C00] transition duration-300 ease-in-out" href="https://www.youtube.com/@Bandithosting2">
+      <i class="fab fa-youtube">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-[#A67C00] transition duration-300 ease-in-out" href="https://www.instagram.com/bandit_host?igsh=b3EzNXgyaWNuajgw">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="Whatsapp" class="hover:text-[#A67C00] transition duration-300 ease-in-out" href="https://wa.me/62882021826347">
+      <i class="fab fa-whatsapp">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
